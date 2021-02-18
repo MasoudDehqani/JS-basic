@@ -1,0 +1,21 @@
+#contentContainer {
+  position: relative;
+  /* left: 100px; */
+  width: 800px;
+  height: 770px;
+  border: 1px black solid;
+  overflow: hidden;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+#thing {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: 50px;
+  top: 50px;
+  background-color: black;
+  /* transition: left 0.5s cubic-bezier(0.42, -0.3, 0.78, 1.25),
+    top 0.5s cubic-bezier(0.42, -0.3, 0.78, 1.25); */
+}

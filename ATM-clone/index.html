@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>ATM clone</title>
+  </head>
+  <body>
+    <div class="cards-container">
+      <div class="card">
+        <!-- <img class="check" src="/images/check-icon.com.png" alt=""> -->
+        <img class="paper-money" src="/images/10000toman.jpg" alt="10000t" />
+        <!-- <div class="card2"></div> -->
+        <!-- <h3 class="title">Card 1</h3> -->
+        <!-- <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div> -->
+        <!-- <div class="circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
+        </div> -->
+      </div>
+      <div class="card">
+        <img class="paper-money" src="/images/5000toman.jpg" alt="5000t" />
+        <!-- <h3 class="title">Card 2</h3> -->
+        <!-- <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+        <div class="circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
+        </div> -->
+      </div>
+      <div class="card">
+        <img class="paper-money" src="/images/2000toman.jpg" alt="2000t" />
+        <!-- <h3 class="title">Card 3</h3> -->
+        <!-- <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+        <div class="circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
+        </div> -->
+      </div>
+      <div class="card">
+        <img class="paper-money" src="/images/1000toman.jpg" alt="1000t" />
+        <!-- <h3 class="title">Card 4</h3> -->
+        <!-- <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+        <div class="circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke" cx="60" cy="60" r="50" />
+          </svg>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="sections-container">
+      <div class="section-one-container">
+        <p><strong>توضیحات</strong> </p>
+        <p>مبلغ مورد نظر خود را وارد کنید</p>
+        <p>سپس از کادر روبرو، اسکناس‌های مورد نظر خود را متناسب با مبلغ درخواستی انتخاب کنید </p>
+        <p>در نهایت دکمه دریافت را بزنید. نتیجه‌ی تراکنش در کادر پایین صفحه نمایش داده خواهد شد</p>
+      </div>
+      <hr>
+
+      <div class="section-two-container">
+        <p><strong>پس از وارد کردن مبلغ مورد نظر و انتخاب اسکناس‌های متناسب با مبلغ درخواستی، دکمه دریافت را فشار دهید</strong> </p>
+        <div id="input-button-container">
+          <input id="input" step="1000" placeholder="مبلغ درخواستی" min="0" type="number" />
+          <button id="submit-btn">دریافت</button>
+          <div class="alert error">
+            <!-- <span class="closebtn">&times;</span>   -->
+            <strong>تراکنش ناموفق:</strong> عدم تناسب مبلغ درخواستی با اسکناس‌های انتخابی
+          </div>
+        </div>
+        <div class="alert success">
+          <!-- <span class="closebtn">&times;</span>   -->
+          <strong>تراکنش موفق: </strong>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="timer-container">
+        <p><strong>توجه: تا پیش از پایان یافتن زمان، تراکنش خود را انجام دهید</strong> </p>
+        <p id="timer"><strong>01 : 00</strong></p>
+        <div class="alert warning">  
+          <strong>انقضای زمان تراکنش: </strong> زمان شما به پایان رسید، لطفا مجدد صفحه را بارگذاری کنید
+          <!-- <span class="closebtn">&times;</span> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>

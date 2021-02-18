@@ -1,0 +1,1 @@
+const inputNumber = document.getElementById("calc-input");

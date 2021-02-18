@@ -1,0 +1,10 @@
+// let date = new Date(+products[0].date * 1000)
+let date2 = new Date(2010, 0, 01, 18, 25, 59)
+let date3 = new Date(Date.now())
+let date4 = new Date(1608064713384)
+
+// console.log(date)
+console.log(date2)
+console.log(date3)
+console.log(date3)
+console.log(date4.toLocaleTimeString())
